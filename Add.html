@@ -1,121 +1,130 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lesson Introduction</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #cfb787;
-            color: black;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 0 10% 50px; /* ナビゲーションバーの高さを調整 */
-            margin-top: 100px; /* ナビゲーションバーと本文の間隔を広げる */
-        }
-        /* 📱 スマートフォン表示のときだけ適用 */
-		@media (max-width: 576px) {
-    	body {
-        margin-top: 140px; /* ナビバーの高さをより大きく確保 */
-        padding: 0 5% 30px;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons Introduction</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #cfb787;
+      color: black;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 0 10% 50px;
+      margin-top: 100px; /* ナビゲーションバーの高さ分 */
     }
-}
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        p {
-            font-size: 1.2em;
-            line-height: 1.8;
-            margin-bottom: 1.8em;
-            text-align: justify; /* テキストを両端揃えで読みやすくする */
-        }
-        .navbar {
-            background-color: #95160c;
-            padding: 12px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            z-index: 1000;
-        }
-        .navbar-brand {
-            color: #cfb787;
-            font-size: 1.5rem;
-            text-decoration: none;
-        }
-        .social-links a {
-            margin-left: 15px;
-            text-decoration: none;
-        }
-        .social-links img {
-            width: 40px;
-            height: auto;
-            transition: transform 0.3s;
-        }
-        .social-links img:hover {
-            transform: scale(1.1);
-        }
-        .indent {
-            text-align: left;
-            padding-left: 2em;
-        }
-
-        .quote {
-            font-family: 'Dancing Script', cursive;
-            font-style: italic;
-            font-size: 1.2em;
-            text-align: center;
-        }
-        .btn-dark {
-    	background-color: #000000; 
-    	border: none; /* 枠線を消す */
-    	color: white; /* 文字を白にする */
+    @media (max-width: 576px) {
+      body {
+        margin-top: 140px; /* スマホでの上余白を広めに */
+        padding: 0 5% 30px;
+      }
+    }
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin-bottom: 1.8em;
+      text-align: justify;
+    }
+    .navbar {
+      background-color: #95160c;
+      padding: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    .navbar-brand {
+      color: #cfb787;
+      font-size: 1.5rem;
+      text-decoration: none;
+    }
+    .social-links a {
+      margin-left: 15px;
+      text-decoration: none;
+    }
+    .social-links img {
+      width: 40px;
+      height: auto;
+      transition: transform 0.3s;
+    }
+    .social-links img:hover {
+      transform: scale(1.1);
+    }
+    .home-button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      padding: 8px 15px;
+      font-size: 1.2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    .home-button:hover {
+      color: #ffcc00;
+    }
+    .indent {
+      text-align: left;
+      padding-left: 2em;
+    }
+    .quote {
+      font-family: 'Dancing Script', cursive;
+      font-style: Alex Brush;
+      font-size: 1.2em;
+      text-align: center;
+    }
+    .btn-dark {
+     background-color: #000000; 
+     border: none; /* 枠線を消す */
+     color: white; /* 文字を白にする */
 		}
-
-    </style>
+  </style>
 </head>
 <body>
-    <!-- ✅ 赤いナビゲーションバーを一番上に固定 -->
-    <nav class="navbar">
-        <div>
-            <a class="navbar-brand" href="index.html">Adam's Music Lesson</a>
-        </div>
-        <div class="social-links">
-            <a href="https://www.instagram.com/yuhoadamtsang/" target="_blank">
-                <img src="INS.png" alt="Instagram">
-            </a>
-            <a href="https://www.youtube.com/channel/UCC0zk5_aQMoN2q-2RGr1AAA" target="_blank">
-                <img src="Youtube.png" alt="YouTube">
-            </a>
-            <a href="https://www.xiaohongshu.com/user/profile/60cee0ac000000000101db33" target="_blank">
-                <img src="xhs.png" alt="xiaohongshu">
-            </a>
-            <a href="https://music.163.com/#/artist?id=13520436" target="_blank">
-                <img src="wyy.png" alt="wangyiyun">
-            </a>
-            <a href="index.html" class="btn btn-dark">Home</a>
-        </div>
-    </nav>
+  <nav class="navbar">
+    <div>
+      <a class="navbar-brand" href="index.html">Adam's Music Lessons</a>
+    </div>
+    <div class="social-links">
+      <a href="https://www.instagram.com/yuhoadamtsang/" target="_blank">
+        <img src="INS.png" alt="Instagram">
+      </a>
+      <a href="https://www.youtube.com/channel/UCC0zk5_aQMoN2q-2RGr1AAA" target="_blank">
+        <img src="Youtube.png" alt="YouTube">
+      </a>
+      <a href="https://www.xiaohongshu.com/user/profile/60cee0ac000000000101db33" target="_blank">
+        <img src="xhs.png" alt="xiaohongshu">
+      </a>
+      <a href="https://music.163.com/#/artist?id=13520436" target="_blank">
+        <img src="wyy.png" alt="wangyiyun">
+      </a>
+      <a href="index.html" class="btn btn-dark">Home</a>
+    </div>
+  </nav>
 
-    <h1>Voice | Piano Lessons</h1>
-    <p style="text-align: center;">(LANGUAGES: English, Mandarin, Cantonese & German)</p>
-    <p class="indent">Sing Smarter, Not Harder</p>
-    <p>As a cosmopolitan musician and certified voice teacher, I work with singers at every level, blending healthy science-driven techniques with clear multilingual guidance. Together we'll build healthy vocal habits, nurture your authentic tone, and achieve sustainable progress across every stage of your development.</p>
-    <p class="indent">Beyond Vocals</p>
-    <p>With certifications of DipABRSM and Trinity ATCL in Piano, I also coach piano/vocal integration. Whether you're looking to casually play favorite songs with vocal accompaniment or preparing for RCM/ABRSM examinations, I'll craft a tailored path to help you unlock synergistic skills for fuller musical expression – empowering complete musical storytelling.</p>
-    <p>📧Explore institutional partnerships and studio locations by emailing</p>
-    <p><a href="mailto:adamtsang9975@gmail.com">adamtsang9975@gmail.com</a></p>
-    <p class="quote">"For me, singing is a process of storytelling, and the composer is like the writer of the story. 
+  <h1>Voice | Piano Lessons</h1>
+  <p style="text-align: center;">(LANGUAGES: English, Mandarin, Cantonese & German)</p>
+  <p class="indent">Sing Smarter, Not Harder</p>
+  <p>As a cosmopolitan musician and certified voice teacher, I work with singers at every level, blending healthy science-driven techniques with clear multilingual guidance. Together we'll build healthy vocal habits, nurture your authentic tone, and achieve sustainable progress across every stage of your development.</p>
+  <p class="indent">Beyond Vocals</p>
+  <p>With certifications of DipABRSM and Trinity ATCL in Piano, I also coach piano/vocal integration. Whether you're looking to casually play favorite songs with vocal accompaniment or preparing for RCM/ABRSM examinations, I'll craft a tailored path to help you unlock synergistic skills for fuller musical expression – empowering complete musical storytelling.</p>
+  <p>📧Explore institutional partnerships and studio locations by emailing</p>
+  <p><a href="mailto:adamtsang9975@gmail.com">adamtsang9975@gmail.com</a></p>
+  <p class="quote">"For me, singing is a process of storytelling, and the composer is like the writer of the story. 
     Whether conveying stories that are joyful or sorrowful, calm or fiery, 
     the essence lies in the genuine and raw emotional expression from the composer and singer."
-</p>
+  </p>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
