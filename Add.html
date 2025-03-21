@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lessons Introduction</title>
+    <title>Lesson Introduction</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
@@ -14,6 +14,13 @@
             padding: 0 10% 50px; /* ナビゲーションバーの高さを調整 */
             margin-top: 100px; /* ナビゲーションバーと本文の間隔を広げる */
         }
+        /* 📱 スマートフォン表示のときだけ適用 */
+		@media (max-width: 576px) {
+    	body {
+        margin-top: 140px; /* ナビバーの高さをより大きく確保 */
+        padding: 0 5% 30px;
+    }
+}
         h1 {
             font-size: 2.5em;
             margin-bottom: 20px;
@@ -65,7 +72,7 @@
             text-align: center;
         }
         .btn-dark {
-    	background-color: #000000; /* オレンジに変更 */
+    	background-color: #000000; 
     	border: none; /* 枠線を消す */
     	color: white; /* 文字を白にする */
 		}
